@@ -1,9 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const webpack = require("webpack");
 const ESLintPlugin = require("eslint-webpack-plugin");
-const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
@@ -65,11 +63,6 @@ module.exports = (env) => {
     },
     plugins: [
       new ESLintPlugin(),
-      new LodashModuleReplacementPlugin(),
-      ...(isProduction ?
-        new webpack.DefinePlugin({
-          "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
-        }) : []),
       new MiniCssExtractPlugin({
         filename: "static/css/[name].[contenthash:8].css",
         chunkFilename: "static/css/[name].[contenthash:8].chunk.css"

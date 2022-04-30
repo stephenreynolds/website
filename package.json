@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "My portfolio website.",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "start:api": "node build/api/server.js",
+    "build": "npm run build:api && npm run build:web",
+    "build:api": "webpack --config webpack.api.config.js --mode=production",
+    "build:web": "webpack --config webpack.web.config.js --mode=production",
+    "dev:api": "webpack -w --config webpack.api.config.js --mode development",
+    "dev:api:start": "nodemon build/api/server.js",
+    "dev:web": "webpack serve --config webpack.web.config.js --mode development",
+    "lint": "eslint",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -61,7 +69,9 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "babel-loader": "^8.2.5",
     "babel-plugin-styled-components": "^2.0.7",
+    "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
+    "dotenv": "^16.0.0",
     "eslint": "^8.14.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
