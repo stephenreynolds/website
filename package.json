@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenreynolds/website.git"
+  },
+  "author": "Stephen Reynolds (mail@stephenreynolds.dev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenreynolds/website/issues"
+  },
+  "homepage": "https://github.com/stephenreynolds/website#readme"
+}
