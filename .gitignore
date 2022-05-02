@@ -1,6 +1,3 @@
-# Build output
-build/
-
 # Editor files
 .idea/
 .vscode/
@@ -91,9 +88,9 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
+# Comment in the src line in if your project uses Gatsby and *not* Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
-# public
+# src
 
 # vuepress build output
 .vuepress/dist
