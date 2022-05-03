@@ -257,6 +257,7 @@ section {
 .portfolio-thumbnails img:hover {
   cursor: pointer;
   border: 1px solid #ccc;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .portfolio-thumbnails img.selected:hover {
