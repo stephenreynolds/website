@@ -39,6 +39,16 @@ a:hover {
   display: none;
 }
 
+@keyframes reveal-top {
+  0% {
+    bottom: -5em;
+  }
+
+  100% {
+    bottom: 25px;
+  }
+}
+
 #top {
   display: none;
   position: absolute;
@@ -60,6 +70,7 @@ a:hover {
 
 #top.reveal {
   display: block;
+  animation: reveal-top 0.5s;
 }
 
 section {
