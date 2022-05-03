@@ -199,9 +199,16 @@ section {
   line-height: 1.5em;
 }
 
-.skill-link:hover {
+
+.skill-link {
   text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0);
+}
+
+.skill-link:hover {
   cursor: pointer;
+  text-decoration-color: rgba(255, 255, 255, 1);
+  transition: text-decoration-color 0.2s ease-in-out;
 }
 
 .skill-link.selected {
