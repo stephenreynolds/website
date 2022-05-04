@@ -113,7 +113,7 @@ section {
   padding: 10px;
 }
 
-#header a:hover {
+#header nav a:hover {
   text-decoration: underline;
   color: initial;
 }
