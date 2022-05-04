@@ -26,6 +26,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #ddd;
+  transition: color 0.2s ease;
 }
 
 #wrapper {
@@ -45,14 +47,14 @@ a:hover {
   }
 
   100% {
-    bottom: 25px;
+    bottom: 50px;
   }
 }
 
 #top {
   display: none;
   position: absolute;
-  bottom: 25px;
+  bottom: 50px;
   right: 70px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 999px;
@@ -113,6 +115,7 @@ section {
 
 #header a:hover {
   text-decoration: underline;
+  color: initial;
 }
 
 .h1-name {
